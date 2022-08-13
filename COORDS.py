@@ -1,6 +1,35 @@
 # Coords saved in a tuple:
-# from COORDS *
+# from COORDS import *
+# Main Drops:
 Zharki = (370,400)
 NorthGeorge = (550,750)
 SouthGeorge = (470,1000)
 Crates = (670,980)
+Hospital = (470,1100)
+ShootingRange = (1170,600)
+Severny = (1300,400)
+Stalber = (2000,420)
+Kameshki = (2400,350)
+Yasnaya = (1900,840)
+Rozhok = (1400,1020)
+School = (1450,1150)
+Apartments = (1520,1170)
+Ruins = (1080,1150)
+WaterTown = (1200,1120)
+Mansion = (2200,1040)
+Lipovka = (2500,1170)
+Prison = (2220,1350)
+Shelter = (2000,1350)
+Trophy = (2000,1250)
+Pochinki = (1250,1450)
+Gatka = (730,1370)
+MyltaPower = (2600,1550)
+Mylta = (2120,1690)
+Farm = (1900,1650)
+Quarry = (550,1890)
+Primorsk = (500,2180)
+FerryPier = (980,2000)
+Military = (1600,2300)
+Novo = (2200,2150)
+
+# Splits

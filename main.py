@@ -2,21 +2,19 @@
 PUBG Map Maker for NA Pro Scrims - 8/12/2022
 """
 import discord
-import asyncio
-import io
 from PIL import Image, ImageFont, ImageDraw
 from keys import token
-from COORDS import *
+import asyncio
+import io
 
 erangelCopy = Image.open('Erangel.png') # Creating the copy of the map
-title_text = "Test"
+title_text = "Test" # Creating text to put onto the copied map
+# Creating the font size:
 fontsize = 75
 font = ImageFont.truetype("arial.ttf", fontsize)
 image_editable = ImageDraw.Draw(erangelCopy)
-color = (247,191,7)
-image_editable.Imagecolor("#E3FD34")
-image_editable.text((670,980), title_text, fill=255, font=font)
-erangelCopy.save("result.png")
+image_editable.text((2200,2150), title_text, fill=255, font=font) # Write the text onto the map
+erangelCopy.save("result.png") # Save the new map
 
 class MyClient(discord.Client):
     async def on_ready(self):
@@ -27,9 +25,7 @@ class MyClient(discord.Client):
         if message.content.startswith(".map"):
             with open('result.png', 'rb') as f:
                 picture = discord.File(f)
-                print(picture)
                 await message.channel.send(file=picture)
-
 
 client = MyClient()
 client.run(token)
